@@ -1,0 +1,173 @@
+
+.half-circle{
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.heroAnimate{
+  animation-name: heroSlideAnimate;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  
+}
+.backwardAnimate{
+  animation-name: heroBackwardSlide;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  
+}
+
+@keyframes heroBackwardSlide  {
+   0%{
+
+    transform: translateX(0);
+
+   }
+   100%{
+ transform: translateX(-100vw);
+   }
+
+
+}
+@keyframes heroSlideAnimate  {
+   0%{
+
+    transform: translateX(100vw);
+
+   }
+   100%{
+ transform: translateX(0);
+   }
+
+
+}
+
+/* paginartion end */
+
+  .single_item_meal{
+    -webkit-box-shadow: -1px 0px 14px -4px rgba(0,0,0,0.75);
+    transition: transform 0.3s linear; /* Normal transition for the class */
+  }
+
+  /* special meal section */
+  @media (max-width:1150px) {
+    
+    .special_meal_container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menuSlider_container{
+      width: 100%;
+    
+    }
+
+    .image_convert_container{
+      width: 100%;
+    }
+  }
+
+  @media (max-width:650px) {
+    .image_left_part_container{
+      width: 75%;
+      height: 400px;
+    }
+
+    .image_container{
+      border: none;
+    }
+
+    .image_left_part_image{
+      width: 50%;
+      transform: translateX(-40px);
+    }
+  }
+
+  @media (max-width:600px) {
+    .image_left_part_container{
+      width: 300px;
+      height: 300px;
+    }
+    .special_text{
+      font-size: 20px;
+    }
+
+    .image_container{
+      width: 200px;
+      height: 200px;
+      transform: translateX(230px) translateY(40px);
+    }
+
+    .image_left_part_image{
+      width: 100px;
+    }
+  }
+
+  /* this is for middle speacial image changing div */
+  @media (max-width:650px) {
+    .text_rec_wrapper{
+      width: 250px;
+      height: 240px;
+    }
+    .text_rec_wrapper p{
+    font-size: 18px;
+    }
+
+
+    .half-circle{
+      width: 200px;
+      height: 200px;
+      transform: translateX(150px) translateY(20px);
+      
+    }
+  
+     .changingImg_container{
+      width: 180px;
+      height: 180px;
+     }
+
+     .changing_img{
+      width: 160px;
+     }
+  }
+
+
+  /* this is fro hero section  */
+  @media (max-width:840px) {
+    .hero_sec_text_container{
+      padding: 0px;
+    }
+  }
+
+  @media (max-width:720px) {
+    .hero_sec_text_container{
+      transform: translateX(10px) translateY(10px);
+    }
+    .hero_sec_text_container .heading{
+     font-size: 20px;
+    }
+  }
+  @media (max-width:550px) {
+   
+    .hero_sec_text_container .heading{
+     font-size: 16px;
+    }
+   
+    .hero_sec_text_container .hero_para{
+     font-size: 10px;
+     padding: 10px 0px 10px 0px;
+    }
+    .hero_sec_text_container .order_online_btn{
+     font-size: 12px;
+     margin: 0;
+    }
+
+    
+  }
+
+  

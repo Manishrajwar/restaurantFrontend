@@ -1,0 +1,13 @@
+.sidebar{
+ animation-name: sidebarAnimation;
+ animation-fill-mode: forwards;
+ animation-duration: 1s;
+ transition: all 1s;
+}
+
+@keyframes sidebarAnimation {
+    
+     100%{
+        transform: translateX(0vw);
+     }
+}
